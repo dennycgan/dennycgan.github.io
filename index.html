@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chenwei (Denny) Gan — Full-Stack Software Engineer</title>
+  <meta name="description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web) and WakeTok (iOS).">
+  <meta property="og:title" content="Chenwei (Denny) Gan — Full-Stack Software Engineer">
+  <meta property="og:description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web) and WakeTok (iOS).">
+  <meta property="og:url" content="https://dennycgan.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232c5f4a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='16' font-weight='600' fill='%23fff'%3ED%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --fg: #1a1a18;
+      --muted: #5c5c56;
+      --accent: #2c5f4a;
+      --rule: #e4e4e0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141413;
+        --fg: #ecece8;
+        --muted: #a3a39c;
+        --accent: #7eb89a;
+        --rule: #2a2a27;
+      }
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 65ch;
+      margin: 0 auto;
+      padding: 3.5rem 1.25rem 4.5rem;
+    }
+
+    header {
+      margin-bottom: 2.75rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .role {
+      margin: 0 0 0.4rem;
+      font-size: 1.0625rem;
+      color: var(--fg);
+    }
+
+    .meta {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
+    .projects-lead {
+      margin: 0 0 1.5rem;
+    }
+
+    .project {
+      margin-bottom: 1.75rem;
+    }
+
+    .project:last-of-type {
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      margin: 0 0 0.45rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+    }
+
+    .project h3 .kind {
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .project p {
+      margin: 0 0 0.55rem;
+    }
+
+    .links {
+      margin: 0;
+      font-size: 0.9375rem;
+    }
+
+    .links .note {
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    .ai-note {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--muted);
+      padding-top: 0.25rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .stack dl {
+      margin: 0;
+    }
+
+    .stack div {
+      margin: 0 0 0.55rem;
+    }
+
+    .stack div:last-child {
+      margin-bottom: 0;
+    }
+
+    .stack dt {
+      display: inline;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .stack dt::after {
+      content: ": ";
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .stack dd {
+      display: inline;
+      margin: 0;
+    }
+
+    .background ul,
+    .education ul,
+    .contact ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .background li,
+    .education li,
+    .contact li {
+      margin: 0 0 0.55rem;
+      padding: 0;
+    }
+
+    .background li:last-child,
+    .education li:last-child,
+    .contact li:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 2.25rem 1rem 3.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Chenwei (Denny) Gan</h1>
+      <p class="role">Full-Stack Software Engineer</p>
+      <p class="meta">Auckland, New Zealand · Post-Study Work Visa, no sponsorship needed</p>
+    </header>
+
+    <section class="intro" aria-label="Introduction">
+      <p>I build full-stack products with TypeScript/React and Python/FastAPI, on PostgreSQL and AWS, and I've shipped an iOS app in Flutter and Swift. Before software, I spent six years in international retail, channel and product operations across Europe, East Africa and APAC, including business-side work on enterprise systems for order management and promotion. <strong>I focus on the business processes a system supports, not just the system itself, and I ask what a system is for before designing how it works.</strong> Master of IT (First Class Honours), University of Auckland.</p>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <p class="projects-lead">Two products I built and shipped myself. Each centres on a narrow, real-world scenario, explored in depth.</p>
+
+      <article class="project">
+        <h3>WakeTok <span class="kind">· iOS app, on the App Store since October 2026</span></h3>
+        <p>Scroll back through your own photo and video library, full screen, one item at a time. Flutter UI over a native Swift layer (PhotoKit, AVFoundation). No account, ads, analytics or uploads.</p>
+        <p class="links">
+          <a href="https://apps.apple.com/nz/app/waketok/id6797156391">App Store</a>
+          ·
+          <a href="https://github.com/dennycgan/WakeTok">Source on GitHub</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>echoType <span class="kind">· Web app, live since July 2026</span></h3>
+        <p>Learn texts you choose by typing them on a loop, with your own notes pinned above each phrase. React and TypeScript, Fastify and PostgreSQL, AWS infrastructure defined in Terraform.</p>
+        <p class="links">
+          <a href="https://echotype.ink">Try it</a>
+          <span class="note"> (guest mode, no sign-up; best on a desktop keyboard)</span>
+          ·
+          <a href="https://github.com/dennycgan/echoType">Source on GitHub</a>
+        </p>
+      </article>
+
+      <p class="ai-note">Both are solo projects built with AI coding assistance. How I worked is described at the end of each README (<a href="https://github.com/dennycgan/WakeTok#how-this-project-was-built">WakeTok README</a> · <a href="https://github.com/dennycgan/echoType#how-this-project-was-built">echoType README</a>).</p>
+    </section>
+
+    <section class="stack" aria-labelledby="stack-heading">
+      <h2 id="stack-heading">Stack</h2>
+      <dl>
+        <div>
+          <dt>Languages</dt>
+          <dd>TypeScript, JavaScript, Python, Dart, Swift, SQL, Java</dd>
+        </div>
+        <div>
+          <dt>Frontend</dt>
+          <dd>React, Vite, Tailwind CSS, React Query, Zustand, Vue.js</dd>
+        </div>
+        <div>
+          <dt>Backend</dt>
+          <dd>Node.js, Fastify, FastAPI, Prisma, Zod, REST APIs, WebSocket</dd>
+        </div>
+        <div>
+          <dt>Databases</dt>
+          <dd>PostgreSQL, SQLite</dd>
+        </div>
+        <div>
+          <dt>Cloud &amp; DevOps</dt>
+          <dd>AWS (EC2, RDS, S3, CloudFront, Cognito, Lambda), Terraform, GitHub Actions, Docker, Git</dd>
+        </div>
+        <div>
+          <dt>Mobile</dt>
+          <dd>Flutter, Riverpod, native Swift (PhotoKit, AVFoundation)</dd>
+        </div>
+        <div>
+          <dt>Security</dt>
+          <dd>Authentication and authorization (RBAC/ABAC), OAuth, Cognito</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="background" aria-labelledby="background-heading">
+      <h2 id="background-heading">Background</h2>
+      <ul>
+        <li>Full Stack Developer (Internship), Pilot, Auckland · 2025</li>
+        <li>GTM Supervisor, Tineco · 2021–2023</li>
+        <li>Event Planning Manager, SUNRA · 2021</li>
+        <li>Country Retail Manager, Transsion (TECNO, Tanzania) · 2017–2021</li>
+      </ul>
+    </section>
+
+    <section class="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul>
+        <li>Master of Information Technology, First Class Honours · University of Auckland · 2025</li>
+        <li>Bachelor of Economics, Finance (International Finance) · Jiangxi University of Finance and Economics · 2017</li>
+      </ul>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:dennygan.nz@gmail.com">dennygan.nz@gmail.com</a></li>
+        <li>Phone: <a href="tel:+64223977885">0223 977 885</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/dennygan">linkedin.com/in/dennygan</a></li>
+        <li>GitHub: <a href="https://github.com/dennycgan">github.com/dennycgan</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
