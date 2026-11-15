@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chenwei (Denny) Gan — Full-Stack Software Engineer</title>
-  <meta name="description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web) and WakeTok (iOS).">
+  <meta name="description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web), WakeTok (iOS) and HearCopy (Android).">
   <meta property="og:title" content="Chenwei (Denny) Gan — Full-Stack Software Engineer">
-  <meta property="og:description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web) and WakeTok (iOS).">
+  <meta property="og:description" content="Full-stack software engineer in Auckland. TypeScript/React, Python/FastAPI, PostgreSQL, AWS. Built and shipped echoType (web), WakeTok (iOS) and HearCopy (Android).">
   <meta property="og:url" content="https://dennycgan.github.io/">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232c5f4a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-size='16' font-weight='600' fill='%23fff'%3ED%3C/text%3E%3C/svg%3E">
@@ -229,13 +229,13 @@
     </header>
 
     <section class="intro" aria-label="Introduction">
-      <p>I build full-stack products mainly with TypeScript/React, Node.js and Python/FastAPI, on PostgreSQL and AWS, and I've shipped an iOS app in Flutter and Swift. Before software, I spent six years in international retail, channel and product operations across Europe, East Africa and APAC, including business-side work on enterprise systems for order management and promotion. <strong>I focus on the business processes a system supports, not just the system itself, and I ask what a system is for before designing how it works.</strong> Master of IT (First Class Honours), University of Auckland.</p>
+      <p>I build full-stack products mainly with TypeScript/React, Node.js and Python/FastAPI, on PostgreSQL and AWS, and I've shipped an iOS app in Flutter and Swift and an Android app in Kotlin. Before software, I spent six years in international retail, channel and product operations across Europe, East Africa and APAC, including business-side work on enterprise systems for order management and promotion. <strong>I focus on the business processes a system supports, not just the system itself, and I ask what a system is for before designing how it works.</strong> Master of IT (First Class Honours), University of Auckland.</p>
     </section>
 
     <section class="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
 
-      <p class="projects-lead">Two products I built and shipped myself. Each centres on a narrow, real-world scenario, explored in depth.</p>
+      <p class="projects-lead">Three products I built and shipped myself. Each centres on a narrow, real-world scenario, explored in depth.</p>
 
       <article class="project">
         <h3>WakeTok <span class="kind">· iPhone app, on the App Store since October 2026</span></h3>
@@ -258,7 +258,18 @@
         </p>
       </article>
 
-      <p class="ai-note">Both are solo projects built with AI coding assistance. How I worked is described at the end of each README (<a href="https://github.com/dennycgan/WakeTok#how-this-project-was-built">WakeTok README</a> · <a href="https://github.com/dennycgan/echoType#how-this-project-was-built">echoType README</a>).</p>
+      <article class="project">
+        <h3>HearCopy <span class="kind">· Android app, released on GitHub in November 2026</span></h3>
+        <p>Turn a short clip of audio playing on your phone into text you can select and copy: a line you didn't catch, or a name or term to look up. Tap a floating button over any app, let the part play, tap again. Native Kotlin with Jetpack Compose; captures other apps' audio with MediaProjection and AudioPlaybackCapture, and transcribes it with OpenAI using your own API key, encrypted with the Android Keystore.</p>
+        <p class="links">
+          <a href="https://github.com/dennycgan/HearCopy/releases/latest">Download the APK</a>
+          <span class="note"> (Android 10 or later; needs your own OpenAI API key)</span>
+          ·
+          <a href="https://github.com/dennycgan/HearCopy">Source on GitHub</a>
+        </p>
+      </article>
+
+      <p class="ai-note">All three are solo projects built with AI coding agents. How I worked is described in each README (<a href="https://github.com/dennycgan/WakeTok#ai-assisted-development">WakeTok</a> · <a href="https://github.com/dennycgan/echoType#ai-assisted-development">echoType</a> · <a href="https://github.com/dennycgan/HearCopy#how-this-was-built">HearCopy</a>).</p>
     </section>
 
     <section class="stack" aria-labelledby="stack-heading">
@@ -266,7 +277,7 @@
       <dl>
         <div>
           <dt>Languages</dt>
-          <dd>TypeScript, JavaScript, Python, Dart, Swift, SQL, Java</dd>
+          <dd>TypeScript, JavaScript, Python, Dart, Swift, Kotlin, SQL, Java</dd>
         </div>
         <div>
           <dt>Frontend</dt>
@@ -286,11 +297,11 @@
         </div>
         <div>
           <dt>Mobile</dt>
-          <dd>Flutter, Riverpod, native Swift (PhotoKit, AVFoundation)</dd>
+          <dd>Flutter, Riverpod, native Swift (PhotoKit, AVFoundation), native Kotlin (MediaProjection, AudioPlaybackCapture, Jetpack Compose)</dd>
         </div>
         <div>
           <dt>Security</dt>
-          <dd>Authentication and authorisation (RBAC/ABAC), OAuth, Cognito</dd>
+          <dd>Authentication and authorisation (RBAC/ABAC), OAuth, Cognito, Android Keystore</dd>
         </div>
       </dl>
     </section>
